@@ -1,0 +1,13 @@
+.DS_STORE
+.DS_Store
+.env
+
+# Log files
+*.log
+
+# Node
+node_modules
+dist
+
+.test
+.vscode
