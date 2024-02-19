@@ -71,13 +71,12 @@ curl --header "Content-Type: application/json" \
   http://localhost:8080/api/constituents | jq
   ```
 
-
 #### GET /constituents/:signupTime
 ```sh
 curl --request GET http://localhost:8080/api/constituents/2024-02-17T15:00:00 | jq
 ```
 
-# GET /constituents/:signupTime/export
+#### GET /constituents/:signupTime/export
 ```sh
 curl --request GET http://localhost:8080/api/constituents/2024-02-17T15:00:00?export=true | jq
 ```
