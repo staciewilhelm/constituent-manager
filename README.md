@@ -81,16 +81,3 @@ curl --request GET http://localhost:8080/api/constituents/2024-02-17T15:00:00 | 
 ```sh
 curl --request GET http://localhost:8080/api/constituents/2024-02-17T15:00:00?export=true | jq
 ```
-
-#### Future features
-Initial thoughts on future features would include:
-- Evaluate and integrate a database
-  - NoSQL would allow for expandable document stores; MongoDB or other?
-  - Remove the need for idea of a `corpus`
-- Add metadata surrounding words
-  - Categories and other classifications
-  - Multi-language support
-- Integrate the additional optional APIs:
-  - Respect a query param for whether or not to include proper nouns in the list of anagrams
-  - Endpoint that identifies words with the most anagrams
-  - Endpoint that takes a set of words and returns whether or not they are all anagrams of each other
